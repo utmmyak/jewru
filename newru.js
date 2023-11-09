@@ -130,7 +130,6 @@ function replaceIconsWith(oldIcon, newImg, invert = false) {
 }
 function replaceTxt(selector,newtext){
     let a = document.querySelector(selector);
-    console.log(a);
     if (!a) { return false; }
     a.textContent = newtext;
     return true;
@@ -153,7 +152,6 @@ function looksLikeLutheran(url) {
                 location.reload();
             }
         }
-        console.log(window.localStorage.getItem("noJewru"));
         if (window.localStorage.getItem("noJewru") == "true") {
             return;
         }
@@ -204,7 +202,6 @@ function looksLikeLutheran(url) {
         favicon.href = "https://i.imgur.com/iSkYJYP.png";
 
         let doDelayed = ()=>{
-            console.log("g",window.location.pathname);
             if (window.location.pathname != "/") {
                 let guruPhoto = document.querySelector("div.emp-card__photo-wrapper");
                 let isLutheran = looksLikeLutheran(window.location.href);
