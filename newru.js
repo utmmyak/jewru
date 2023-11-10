@@ -177,6 +177,8 @@ function looksLikeLutheran(url) {
         replaceIconsWith("guru-icon-airplane","https://cdn-icons-png.flaticon.com/128/1693/1693487.png");
         replaceIconsWith("guru-icon-tools", "https://cdn-icons-png.flaticon.com/128/9131/9131609.png");
 
+        
+
 
 
         e = makeDreidel("201px");
@@ -296,10 +298,42 @@ function looksLikeLutheran(url) {
                 setTimeout(doDelayed,50);
                 return;
             }
+            let gce = document.querySelector("#search-chooser-flyout .Search-Customers .Icon");
+            if (gce) {
+                gce.style.backgroundImage = "url(https://cdn-icons-png.flaticon.com/128/9382/9382829.png)";
+                gce.style.backgroundSize = "18px";
+            }
+            gce = document.querySelector("#search-chooser-flyout .Search-Employees .Icon");
+            if (gce) {
+                gce.style.backgroundImage = "url(https://cdn-icons-png.flaticon.com/128/3770/3770079.png)";
+                gce.style.backgroundSize = "18px";
+            }
+
+            gce = document.querySelector("#search-chooser-flyout .Search-Rooms .Icon");
+            if (gce) {
+                gce.style.backgroundImage = "url(https://cdn-icons-png.flaticon.com/128/265/265569.png)";
+                gce.style.backgroundSize = "18px";
+            }
+            gce = document.querySelector("#search-chooser-flyout .Search-CodeClient .Icon");
+            if (gce) {
+                gce.style.backgroundImage = "url(https://cdn-icons-png.flaticon.com/128/279/279986.png)";
+                gce.style.backgroundSize = "18px";
+            }
+            gce = document.querySelector("#search-chooser-flyout .Search-CodeServer .Icon");
+            if (gce) {
+                gce.style.backgroundImage = "url(https://cdn-icons-png.flaticon.com/128/279/279984.png)";
+                gce.style.backgroundSize = "18px";
+            }
+            gce = document.querySelector("#search-chooser-flyout .Search-RecommendedLinks .Icon");
+            if (gce) {
+                gce.style.backgroundImage = "url(https://cmcfoodsus.com/wp-content/uploads/2022/08/Kosher-Union-Logo-BK.png)";
+                gce.style.backgroundSize = "18px";
+            }
+
+
         };
         setTimeout(doDelayed,120);
 
 
     });
-    // Your code here...
 })();
