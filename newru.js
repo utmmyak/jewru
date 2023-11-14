@@ -298,7 +298,7 @@ function looksLikeLutheran(url) {
                 setTimeout(doDelayed,50);
                 return;
             }
-            if (!replaceTxt("#ASidebar1_aiLunchMenus_header > div","Kosher Noshes") {
+            if (!replaceTxt("#ASidebar1_aiLunchMenus_header > div","Kosher Noshes")) {
                 setTimeout(doDelayed,50);
                 return;
             }
