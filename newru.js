@@ -157,7 +157,7 @@ function looksLikeLutheran(url) {
         }
         let pp = document.getElementById("txtSearch");
         pp.placeholder = "Search Jewru...";
-        //
+        
         let g=document.getElementById("GuruLogoImage");
         let e = document.createElement('img');
         e.src = "https://i.imgur.com/L7ONVA7.png";
@@ -298,6 +298,11 @@ function looksLikeLutheran(url) {
                 setTimeout(doDelayed,50);
                 return;
             }
+            if (!replaceTxt("#ASidebar1_aiLunchMenus_header > div","Kosher Noshes") {
+                setTimeout(doDelayed,50);
+                return;
+            }
+            
             let gce = document.querySelector("#search-chooser-flyout .Search-Customers .Icon");
             if (gce) {
                 gce.style.backgroundImage = "url(https://cdn-icons-png.flaticon.com/128/9382/9382829.png)";
