@@ -131,7 +131,7 @@ function replaceIconsWith(oldIcon, newImg, invert = false) {
 function replaceTxt(selector,newtext){
     let a = document.querySelector(selector);
     if (!a) { return false; }
-    a.textContent = newtext;
+    a.innerHTML = newtext;
     return true;
 }
 function looksLikeLutheran(url) {
@@ -181,10 +181,7 @@ function looksLikeAlex(url) {
         replaceIconsWith("guru-icon-tools", "https://cdn-icons-png.flaticon.com/128/9131/9131609.png");
 
 
-        let h = document.querySelector("#app > div:nth-child(1) > div.emp-card.z-depth-1 > div > div.flex-1 > div:nth-child(1) > div > div.flex-1 > div.emp-card__team-role.emp-card__data-row > div > a");
-        if (h) {
-            h.innerHTML = "Resolute Professional Billing<br>Software Developer";
-        }
+        
 
 
         e = makeDreidel("201px");
@@ -215,6 +212,10 @@ function looksLikeAlex(url) {
                 let isLutheran = looksLikeLutheran(window.location.href);
                 if (!guruPhoto) {
                     setTimeout(doDelayed,50);
+                }
+                if (looksLikeAlex(window.location.href) && !replaceTxt("div.emp-card__team-role.emp-card__data-row > div > a", "Resolute Professional Billing<br>Software Developer")) {
+                    setTimeout(doDelayed,50);
+                    return;
                 }
                 if (guruPhoto != null && window.location.href.indexOf("EmployeeProfile") >= 0) {
                     let imgb = document.createElement("img");
