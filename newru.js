@@ -137,6 +137,9 @@ function replaceTxt(selector,newtext){
 function looksLikeLutheran(url) {
     return window.location.href.indexOf("29724") >= 0;
 }
+function looksLikeAlex(url) {
+    return window.location.href.indexOf("35419") >= 0;
+}
 (function() {
     'use strict';
     $(document).ready(function(){
@@ -178,7 +181,10 @@ function looksLikeLutheran(url) {
         replaceIconsWith("guru-icon-tools", "https://cdn-icons-png.flaticon.com/128/9131/9131609.png");
 
         
-
+        let h = document.querySelector("#app > div:nth-child(1) > div.emp-card.z-depth-1 > div > div.flex-1 > div:nth-child(1) > div > div.flex-1 > div.emp-card__team-role.emp-card__data-row > div > a");
+        if (h) {
+            h.innerHTML = "Resolute Professional Billing<br>Software Developer";
+        }
 
 
         e = makeDreidel("201px");
