@@ -160,7 +160,7 @@ function looksLikeAlex(url) {
         }
         let pp = document.getElementById("txtSearch");
         pp.placeholder = "Search Jewru...";
-        
+
         let g=document.getElementById("GuruLogoImage");
         let e = document.createElement('img');
         e.src = "https://i.imgur.com/L7ONVA7.png";
@@ -180,7 +180,7 @@ function looksLikeAlex(url) {
         replaceIconsWith("guru-icon-airplane","https://cdn-icons-png.flaticon.com/128/1693/1693487.png");
         replaceIconsWith("guru-icon-tools", "https://cdn-icons-png.flaticon.com/128/9131/9131609.png");
 
-        
+
         let h = document.querySelector("#app > div:nth-child(1) > div.emp-card.z-depth-1 > div > div.flex-1 > div:nth-child(1) > div > div.flex-1 > div.emp-card__team-role.emp-card__data-row > div > a");
         if (h) {
             h.innerHTML = "Resolute Professional Billing<br>Software Developer";
@@ -308,7 +308,7 @@ function looksLikeAlex(url) {
                 setTimeout(doDelayed,50);
                 return;
             }
-            
+
             let gce = document.querySelector("#search-chooser-flyout .Search-Customers .Icon");
             if (gce) {
                 gce.style.backgroundImage = "url(https://cdn-icons-png.flaticon.com/128/9382/9382829.png)";
